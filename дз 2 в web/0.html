@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<meta charset="utf-8">
+	<title>Форма для заполнения</title>
+</head>
+<body style= "background-color: rgb(192, 192, 192);">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  		<div class="container-fluid">
+    		<a class="navbar-brand" href="#">Navbar</a>
+    		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      			<span class="navbar-toggler-icon"></span>
+    		</button>
+    		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+      			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        			<li class="nav-item">
+          				<a class="nav-link active" aria-current="page" href="#">Home</a>
+        			</li>
+        			<li class="nav-item">
+          				<a class="nav-link" href="#">Link</a>
+        			</li>
+        			<li class="nav-item dropdown">
+          				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            				Dropdown
+          				</a>
+          				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            				<li><a class="dropdown-item" href="#">Action</a></li>
+            				<li><a class="dropdown-item" href="#">Another action</a></li>
+            				<li><hr class="dropdown-divider"></li>
+            				<li><a class="dropdown-item" href="#">Something else here</a></li>
+          				</ul>
+        			</li>
+        			<li class="nav-item">
+          				<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        			</li>
+      			</ul>
+      			<form class="d-flex">
+        			<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        			<button class="btn btn-outline-success" type="submit">Search</button>
+      			</form>
+    		</div>
+  		</div>
+	</nav>
+	<div class="container-fluid">
+		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  		<div class="carousel-inner">
+    		<div class="carousel-item active">
+      		<img src="img\1.jpg" class="rounded mx-auto d-block w-70" width="500" height="300">
+    		</div>
+    	<div class="carousel-item">
+      	<img src="img\2.jpg" class="rounded mx-auto d-block w-70" width="500" height="300">
+    	</div>
+    	<div class="carousel-item">
+      	<img src="img\3.jpg" class="rounded mx-auto d-block w-70" width="500" height="300">
+    	</div>
+    	<div class="carousel-item">
+      	<img src="img\4.png" class="rounded mx-auto d-block w-70" width="500" height="300">
+    	</div>
+    	<div class="carousel-item">
+      	<img src="img\5.jpg" class="rounded mx-auto d-block w-70" width="500" height="300">
+    	</div>
+  	</div>
+  	<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+    	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    	<span class="visually-hidden">Предыдущий</span>
+  	</button>
+  	<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    	<span class="visually-hidden">Следующий</span>
+  	</button>
+	</div>
+</div>
+	<div class="container">
+		<form role="form">
+			<h1 align="center">Жизнь при COVID-19</h1>
+			<h2 align="center">Пожалуйста, заполните форму ниже</h2>
+			<div class="form-control">
+				<label for="name">Name</label>
+				<input type="name" class="form-control" id="name" placeholder="Введите ваше имя">
+			</div>
+			<div class="form-control">
+				<label for="email">Email</label>
+				<input type="email" class="form-control" id="email" placeholder="Введите ваш email">
+			</div>
+			<div class="form-control">
+				<label for="number">Оцените ваше самочувствие</label>
+				<input type="number" class="form-control" id="number" placeholder="Ваша оценка" min="0" max="10">
+			</div>
+			<label>
+					Какая форма обучения вам предпочтительней?					
+			</label>
+			<select class="form-select">
+				<option value="1">
+					Очно
+				</option>
+				<option value="2">
+					Дистант
+				</option>
+				<option value="3">
+					Смешанная
+				</option>
+			</select>
+			<label>
+				Как вы относитесь к вакцинации?
+			</label>
+			<div class="radio">
+				<label>
+					<input type="radio" name="optionsRadios" id="radios1" value="option1">
+					Очень плохо
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="optionsRadios" id="radios2" value="option2">
+					Плохо
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="optionsRadios" id="radios3" value="option3">
+					Нейтрально
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="optionsRadios" id="radios4" value="option4">
+					Хорошо
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="optionsRadios" id="radios5" value="option5">
+					Очень хорошо
+				</label>
+			</div>
+			<label>
+				Каким отечественным вакцинам вы доверяете?
+			</label>
+			<div class="checkbox">
+				<label>
+					<input type="checkbox"> Гам-Ковид-Вак 
+				</label>
+			</div>
+			<div class="checkbox">
+				<label>
+					<input type="checkbox"> КовиВак 
+				</label>
+			</div>
+			<div class="checkbox">
+				<label>
+					<input type="checkbox"> ЭпиВакКорона
+				</label>
+			</div>
+			<div class="checkbox">
+				<label>
+					<input type="checkbox"> Никаким
+				</label>
+			</div>
+			<label class="text"><b>Ваш комментарий</b></label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Оставьте свой комментарий..." rows="4"></textarea>
+			<button type="button" class="btn btn-dark">Отправить</button>
+		</form>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>

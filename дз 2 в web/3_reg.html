@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Join GitHub · GitHub</title>
+	<link rel="icon" href="https://github.com/fluidicon.png" title="GitHub">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<style>
+		.labels{
+			margin-top: 1%;
+		}
+		p.text-muted{
+			margin: 0;
+		}
+		.form-control{
+			border-radius: 6px;
+			background-color: #f6f8fa;
+		}
+		.form-check-label{
+			font-size: 13px
+		}
+		.form-label{
+			font-weight: bold;
+			font-size: 15px;
+		}
+		.form-text{
+			font-size: 11px;
+		}
+		a{
+			text-decoration: none;
+		}
+		.btn{
+			border-radius: 7px;
+			background-color: #2da44e;
+		}
+	</style>
+</head>
+<body>
+	<div class="container labels">
+		<div class="row justify-content-center">
+			<div class="col-3 text-center">
+				<p class="text-muted">Присоединяйтесь к Github</p>
+				<h3>Создайте аккаунт</h3>
+			</div>
+		</div>
+	</div>
+	<div class="container form">
+		<div class="row justify-content-center">
+			<div class="col-4">
+				<form>
+				  	<div class="mb-3">
+					    <label class="form-label">Никнейм</label>
+					    <input type="name" class="form-control form-control-sm" required>
+				  	</div>
+				  	<div class="mb-3">
+					    <label class="form-label">Почта</label>
+					    <input type="email" class="form-control form-control-sm" required>
+					</div>
+				  	<div class="mb-3">
+					    <label class="form-label">Пароль</label>
+					    <input type="password" class="form-control form-control-sm"required>
+					     <div class="form-text">Убедитесь, что пароль не менее 8 символов или не более 15 символов, включая хотя бы одно число и строчную букву.<a href="https://docs.github.com/articles/creating-a-strong-password">   	Узнать больше</a></div>
+				  	</div>
+				  	<label class="form-label">Спам</label>
+				  	<div class="mb-3 form-check">
+					    <input type="checkbox" class="form-check-input" >
+					    <label class="form-check-label text-muted">Согласен на отправку "интересных" предложений на почту</label>
+				 	</div>
+				 	<div class="d-grid gap-2 text-muted">
+				  		<button type="submit" class="btn btn-success">Создать аккаунт</button>
+				  	</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
